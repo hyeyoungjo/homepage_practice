@@ -1,0 +1,1042 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hye-Young's Portfolio</title>
+    <meta name="description" content="Porfolio 2020" />
+    <meta name="author" content="Hye-Young Jo" />
+    <link rel="icon" type="images/png" href="imgs/favicon.png" />
+    <script
+      src="https://kit.fontawesome.com/846a6f22ac.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <!-- all: left + right + footer -->
+    <div id="all">
+      <div id="left">
+        <div class="logo">
+          <a onClick="window.location.reload()">
+            <img src="imgs/favicon.png" alt="Hye-Young" />
+          </a>
+        </div>
+
+        <!-- About -->
+        <div id="about__wrap" class="section">
+          <section id="about" class="section__container">
+            <img
+              src="imgs/pic-vj.jpeg"
+              alt="Hye-Young's profile photo"
+              class="about__avatar"
+            />
+            <div class="about__description">
+              <h1>Hye-Young Jo</h1>
+              <h2>
+                Hi, I’m Hye-Young,<br />
+                a visualist and a master student in Industrial Design at
+                KAIST.<br />
+                I am advised by Andrea Bianchi at the MAKinteract Lab, a part of
+                the HCI@KAIST group.<br /><br />
+                I’m interested in creating artistic life with design thinking
+                and emerging technologies. <br /><br />
+                contact: <span id="myEmail">jhy.vfx@gmail.com</span>
+              </h2>
+            </div>
+            <a href="imgs/HYJ_CV.pdf" target="_black">
+              <button class="about__cv">
+                CV
+              </button>
+            </a>
+          </section>
+        </div>
+
+        <!-- Projects -->
+        <div id="projects__wrap" class="section">
+          <section id="projects" class="section__container">
+            <h1>Projects</h1>
+            <div class="projects__categories">
+              <button class="categories__btn selected" data-filter="*">
+                All<span class="categories__cnt">15</span>
+              </button>
+              <button class="categories__btn" data-filter="ui-ux">
+                UI/UX<span class="categories__cnt">0</span>
+              </button>
+              <button class="categories__btn" data-filter="vr-ar">
+                VR/AR<span class="categories__cnt">4</span>
+              </button>
+              <button class="categories__btn" data-filter="tangible">
+                Tangible<span class="categories__cnt">0</span>
+              </button>
+              <button class="categories__btn" data-filter="graphic">
+                Graphic<span class="categories__cnt">1</span>
+              </button>
+              <button class="categories__btn" data-filter="fine-art">
+                Fine Art<span class="categories__cnt">6</span>
+              </button>
+              <button class="categories__btn" data-filter="film">
+                Film<span class="categories__cnt">3</span>
+              </button>
+              <button class="categories__btn" data-filter="etc">
+                Etc<span class="categories__cnt">0</span>
+              </button>
+            </div>
+
+            <div class="projects__container">
+              <!-- 2020, Being City -->
+              <div class="content" id="open-beingCity" data-tag="vr-ar">
+                <div
+                  class="content__thumbnail"
+                  id="content__thumbnail--BeingCity"
+                ></div>
+                <div class="content__description">
+                  <h3 class="content__title">BeingCity</h3>
+                  <span>VR , 2020</span>
+                </div>
+              </div>
+              <!-- modal -->
+              <div class="modal closed" id="modal-beingCity">
+                <div class="modal__overlay"></div>
+                <div class="modal__content">
+                  <button class="modal__btn">
+                    <i class="far fa-window-close"></i>
+                  </button>
+                  <h1>Being City</h1>
+                  <img
+                    class="modal__mainImg"
+                    src="imgs/projects/beingCity_m.jpg"
+                    alt="project image"
+                  />
+                  <h2 class="content__explanation">
+                    <div class="content__info">
+                      <ul class="content__info1">
+                        <li>Year</li>
+                        <li>For</li>
+                        <li>Role</li>
+                        <li>Skills</li>
+                        <li>Link</li>
+                      </ul>
+                      <ul class="content__info2">
+                        <li>2020</li>
+                        <li>Yoo Tae-Kyung</li>
+                        <li>Art Director</li>
+                        <li>Unreal Engine 4</li>
+                        <li>not available</li>
+                      </ul>
+                    </div>
+                    <div class="content__txt">
+                      &lt;Being City&gt; is a VR prototype of director Yoo
+                      Tae-Kyung's personal project.<br />User can explore the
+                      boundaries of the cities and break down the boundaries
+                      with VR controller.
+                    </div>
+                  </h2>
+                </div>
+              </div>
+
+              <!-- 2019, Fashion for Help -->
+              <div class="content" id="open-fashionForHelp" data-tag="vr-ar">
+                <div
+                  class="content__thumbnail"
+                  id="content__thumbnail--FashionForHelp"
+                ></div>
+                <div class="content__description">
+                  <h3>Fashion for Help</h3>
+                  <span>VR Show Room, 2019 </span>
+                </div>
+              </div>
+              <!-- modal -->
+              <div class="modal closed" id="modal-fashionForHelp">
+                <div class="modal__overlay"></div>
+                <div class="modal__content">
+                  <button class="modal__btn">
+                    <i class="far fa-window-close"></i>
+                  </button>
+                  <h1>Fashion For Help</h1>
+                  <img
+                    class="modal__mainImg"
+                    src="imgs/projects/FashionForHelp_m.jpg"
+                    alt="project image"
+                  />
+                  <h2 class="content__explanation">
+                    <div class="content__info">
+                      <ul class="content__info1">
+                        <li>Year</li>
+                        <li>For</li>
+                        <li>Role</li>
+                        <li>Skills</li>
+                        <li>Link</li>
+                      </ul>
+                      <ul class="content__info2">
+                        <li>2019</li>
+                        <li>Son Young-Mo</li>
+                        <li>Technical Artist</li>
+                        <li>Unreal Engine 4</li>
+                        <li>not available</li>
+                      </ul>
+                    </div>
+                    <div class="content__txt">
+                      &lt;Fashion For Help&gt; is a VR prototype of director Son
+                      Young-Mo's project in Kookmin University.<br />
+                      User can customize future jacket by selecting color and
+                      andding features to enhance physical ability of elderly.
+                    </div>
+                  </h2>
+                </div>
+              </div>
+              <!-- 2019, AR Tide -->
+              <div class="content" id="open-ARTide" data-tag="vr-ar">
+                <div
+                  class="content__thumbnail"
+                  id="content__thumbnail--ARTide"
+                ></div>
+                <div class="content__description">
+                  <h3>AR Tide</h3>
+                  <span>AR application, 2018-2019 </span>
+                </div>
+              </div>
+              <!-- modal -->
+              <div class="modal closed" id="modal-ARTide">
+                <div class="modal__overlay"></div>
+                <div class="modal__content">
+                  <button class="modal__btn">
+                    <i class="far fa-window-close"></i>
+                  </button>
+                  <h1>AR Tide</h1>
+                  <img
+                    class="modal__mainImg"
+                    src="imgs/projects/ARTide_m.jpg"
+                    alt="project image"
+                  />
+                  <h2 class="content__explanation">
+                    <div class="content__info">
+                      <ul class="content__info1">
+                        <li>Year</li>
+                        <li>For</li>
+                        <li>Role</li>
+                        <li>Skills</li>
+                        <li>Link</li>
+                      </ul>
+                      <ul class="content__info2">
+                        <li>2019</li>
+                        <li>
+                          <a
+                            href="http://www.dexterstudios.com/ko/"
+                            target="_blank"
+                            >Dexter Studios</a
+                          >
+                        </li>
+                        <li>AR Artist</li>
+                        <li>Unity</li>
+                        <li>not available</li>
+                      </ul>
+                    </div>
+                    <div class="content__txt">
+                      &lt;AR Tide&gt; is an AR application for pop up exhibition
+                      in Bucheon International Fantastic Film Festival<br />
+                      spectator can download mobile app via on-site QR code.
+                      When spectator takes picture of real-life object or
+                      printed image in gallery, 3D graphic image appears on
+                      screen.
+                    </div>
+                  </h2>
+                </div>
+              </div>
+              <!-- 2018, VR Tide -->
+              <div class="content" id="open-VRTide" data-tag="vr-ar">
+                <div
+                  class="content__thumbnail"
+                  id="content__thumbnail--VRTide"
+                ></div>
+                <div class="content__description">
+                  <h3>VR Tide</h3>
+                  <span>VR Toon Film, 2018-2019</span>
+                </div>
+              </div>
+              <!-- modal -->
+              <div class="modal closed" id="modal-VRTide">
+                <div class="modal__overlay"></div>
+                <div class="modal__content">
+                  <button class="modal__btn">
+                    <i class="far fa-window-close"></i>
+                  </button>
+                  <h1>VR Tide</h1>
+                  <img
+                    class="modal__mainImg"
+                    src="imgs/projects/VRTide_m.jpg"
+                    alt="project image"
+                  />
+                  <h2 class="content__explanation">
+                    <div class="content__info">
+                      <ul class="content__info1">
+                        <li>Year</li>
+                        <li>For</li>
+                        <li>Role</li>
+                        <li>Skills</li>
+                        <li>Link</li>
+                      </ul>
+                      <ul class="content__info2">
+                        <li>2018-2019</li>
+                        <li>
+                          <a
+                            href="http://www.dexterstudios.com/ko/"
+                            target="_blank"
+                            >Dexter Studios</a
+                          >
+                        </li>
+                        <li>VR Artist</li>
+                        <li>Unreal Engine 4</li>
+                        <li>
+                          <a
+                            href="https://store.steampowered.com/app/1263410/The_Tide/"
+                            >STEAM</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="content__txt">
+                      &lt;VR Tide&gt; is a VR short film based on web-toon
+                      &lt;Tide&gt; by Cho-Seok.<br />
+                      It has 6 episodes, each one is about 5 minutes long. I
+                      participated as a VR artist working on concept art,
+                      modeling, level design, lighting, look development, and UI
+                    </div>
+                  </h2>
+                </div>
+              </div>
+              <!-- 2018, Mesurer -->
+              <div class="content" id="open-mesurer" data-tag="fine-art">
+                <div
+                  class="content__thumbnail"
+                  id="content__thumbnail--Mesurer"
+                ></div>
+                <div class="content__description">
+                  <h3>Mesurer</h3>
+                  <span>video essay, 2018</span>
+                </div>
+              </div>
+              <!-- modal -->
+              <div class="modal closed" id="modal-mesurer">
+                <div class="modal__overlay"></div>
+                <div class="modal__content">
+                  <button class="modal__btn">
+                    <i class="far fa-window-close"></i>
+                  </button>
+                  <h1>Mesurer</h1>
+                  <img
+                    class="modal__mainImg"
+                    src="imgs/projects/Mesurer_m.jpg"
+                    alt="project image"
+                  />
+                  <h2 class="content__explanation">
+                    <div class="content__info">
+                      <ul class="content__info1">
+                        <li>Year</li>
+                        <li>For</li>
+                        <li>Role</li>
+                        <li>Skills</li>
+                        <li>Link</li>
+                      </ul>
+                      <ul class="content__info2">
+                        <li>2018</li>
+                        <li>-</li>
+                        <li>Artist</li>
+                        <li>Premiere, Nuke</li>
+                        <li>not available</li>
+                      </ul>
+                    </div>
+                    <div class="content__txt">
+                      &lt;Mesurer&gt; is a media installation project.<br />
+                      It has two video, one projected on the wall and the other
+                      projected on the floor.<br />
+                      The former has 15 minutes long story about virtual
+                      character measuring physical and emotional distance
+                      between people.<br />
+                      The latter is a looped video of tapeline shrinking and
+                      stretching. <br />
+                      This was on display at Platform-L contemporary art center
+                      under the name of exhibiton &lt;Lapses&gt; curated by art
+                      collective group Eobchae.
+                    </div>
+                  </h2>
+                </div>
+              </div>
+              <!-- 2018, Along with the Gods : The Last 49 Days -->
+              <div class="content" id="open-gods2" data-tag="film">
+                <div
+                  class="content__thumbnail"
+                  id="content__thumbnail--Gods2"
+                ></div>
+                <div class="content__description">
+                  <h3>Along with the Gods : The Last 49 Days</h3>
+                  <span>vfx composition, 2018</span>
+                </div>
+              </div>
+              <!-- modal -->
+              <div class="modal closed" id="modal-gods2">
+                <div class="modal__overlay"></div>
+                <div class="modal__content">
+                  <button class="modal__btn">
+                    <i class="far fa-window-close"></i>
+                  </button>
+                  <h1>Along with the Gods : The Last 49 Days</h1>
+                  <img
+                    class="modal__mainImg"
+                    src="imgs/projects/Gods2_m.jpg"
+                    alt="project image"
+                  />
+                  <h2 class="content__explanation">
+                    <div class="content__info">
+                      <ul class="content__info1">
+                        <li>Year</li>
+                        <li>For</li>
+                        <li>Role</li>
+                        <li>Skills</li>
+                        <li>Link</li>
+                      </ul>
+                      <ul class="content__info2">
+                        <li>2018</li>
+                        <li>
+                          <a
+                            href="http://www.dexterstudios.com/ko/"
+                            target="_blank"
+                            >Dexter Studios</a
+                          >
+                        </li>
+                        <li>Compositor</li>
+                        <li>Nuke</li>
+                        <li>
+                          <a href="https://youtu.be/oV8ka6lHHjE" target="_blank"
+                            >Youtube</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="content__txt">
+                      &lt;Along with the Gods : The Last 49 Days&gt; is a sequel
+                      of previous film &lt;Along with the Gods : The Two
+                      Worlds&gt;<br />
+                      It is a South Korean fantasy action film directed by Kim
+                      Yong-Hwa and based on the web-toon series by Joo Ho-Min.
+                      <br />
+                      I participated as a VFX compositor.
+                    </div>
+                  </h2>
+                </div>
+              </div>
+              <!-- 2017, 1987:When the Day Comes-->
+              <div class="content" id="open-y1987" data-tag="film">
+                <div
+                  class="content__thumbnail"
+                  id="content__thumbnail--1987"
+                ></div>
+                <div class="content__description">
+                  <h3>1987:When the Day Comes</h3>
+                  <span>vfx composition, 2017</span>
+                </div>
+              </div>
+              <!-- modal -->
+              <div class="modal closed" id="modal-y1987">
+                <div class="modal__overlay"></div>
+                <div class="modal__content">
+                  <button class="modal__btn">
+                    <i class="far fa-window-close"></i>
+                  </button>
+                  <h1>1987:When the Day Comes</h1>
+                  <img
+                    class="modal__mainImg"
+                    src="imgs/projects/y1987_m.jpg"
+                    alt="project image"
+                  />
+                  <h2 class="content__explanation">
+                    <div class="content__info">
+                      <ul class="content__info1">
+                        <li>Year</li>
+                        <li>For</li>
+                        <li>Role</li>
+                        <li>Skills</li>
+                        <li>Link</li>
+                      </ul>
+                      <ul class="content__info2">
+                        <li>2017</li>
+                        <li>
+                          <a
+                            href="http://www.dexterstudios.com/ko/"
+                            target="_blank"
+                            >Dexter Studios</a
+                          >
+                        </li>
+                        <li>Compositor</li>
+                        <li>Nuke</li>
+                        <li>
+                          <a href="https://youtu.be/WKQSRFlfr50" target="_blank"
+                            >Youtube</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="content__txt">
+                      &lt;1987:When the Day Comes&gt; is a South Korean
+                      political thriller film directed by Jang Joon-Hwan.<br />
+                      I participated as a VFX compositor.
+                    </div>
+                  </h2>
+                </div>
+              </div>
+              <!-- 2017, Along with the Gods : The Two Worlds -->
+              <div class="content" id="open-gods1" data-tag="film">
+                <div
+                  class="content__thumbnail"
+                  id="content__thumbnail--Gods1"
+                ></div>
+                <div class="content__description">
+                  <h3>Along with the Gods : The Two Worlds</h3>
+                  <span>vfx composition, 2017</span>
+                </div>
+              </div>
+              <!-- modal -->
+              <div class="modal closed" id="modal-gods1">
+                <div class="modal__overlay"></div>
+                <div class="modal__content">
+                  <button class="modal__btn">
+                    <i class="far fa-window-close"></i>
+                  </button>
+                  <h1>Along with the Gods : The Two Worlds</h1>
+                  <img
+                    class="modal__mainImg"
+                    src="imgs/projects/Gods1_m.jpg"
+                    alt="project image"
+                  />
+                  <h2 class="content__explanation">
+                    <div class="content__info">
+                      <ul class="content__info1">
+                        <li>Year</li>
+                        <li>For</li>
+                        <li>Role</li>
+                        <li>Skills</li>
+                        <li>Link</li>
+                      </ul>
+                      <ul class="content__info2">
+                        <li>2017</li>
+                        <li>
+                          <a
+                            href="http://www.dexterstudios.com/ko/"
+                            target="_blank"
+                            >Dexter Studios</a
+                          >
+                        </li>
+                        <li>Compositor</li>
+                        <li>Nuke</li>
+                        <li>
+                          <a href="https://youtu.be/5O5PVvHTWRo" target="_blank"
+                            >Youtube</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="content__txt">
+                      &lt;Along with the Gods : The Two Worldss&gt; is a South
+                      Korean fantasy action film directed by Kim Yong-Hwa and
+                      based on the web-toon series by Joo Ho-Min.
+                      <br />
+                      I participated as a VFX compositor.
+                    </div>
+                  </h2>
+                </div>
+              </div>
+              <!-- 2016, We Play-->
+              <div class="content" id="open-VJWePlay" data-tag="fine-art">
+                <div
+                  class="content__thumbnail"
+                  id="content__thumbnail--WePlay"
+                ></div>
+                <div class="content__description">
+                  <h3>We Play</h3>
+                  <span>VJ Show, 2016</span>
+                </div>
+              </div>
+              <!-- modal -->
+              <div class="modal closed" id="modal-VJWePlay">
+                <div class="modal__overlay"></div>
+                <div class="modal__content">
+                  <button class="modal__btn">
+                    <i class="far fa-window-close"></i>
+                  </button>
+                  <h1>We Play</h1>
+                  <img
+                    class="modal__mainImg"
+                    src="imgs/projects/VJWePlay_m.jpg"
+                    alt="project image"
+                  />
+                  <h2 class="content__explanation">
+                    <div class="content__info">
+                      <ul class="content__info1">
+                        <li>Year</li>
+                        <li>For</li>
+                        <li>Role</li>
+                        <li>Skills</li>
+                        <li>Link</li>
+                      </ul>
+                      <ul class="content__info2">
+                        <li>2016</li>
+                        <li>-</li>
+                        <li>VJ</li>
+                        <li>VDMX, Maya</li>
+                        <li>not available</li>
+                      </ul>
+                    </div>
+                    <div class="content__txt">
+                      &lt;We Play&gt; is a live VJing show. <br />
+                      This was final show for class called Parkpunk's Viewzic
+                      Studio in Sangsangmadang academy. I participated as a VJ
+                      and performed with DJ about 5 minutes.
+                    </div>
+                  </h2>
+                </div>
+              </div>
+              <!-- 2016, Moving Paper Animation -->
+              <div class="content" id="open-moving" data-tag="graphic">
+                <div
+                  class="content__thumbnail"
+                  id="content__thumbnail--Moving"
+                ></div>
+                <div class="content__description">
+                  <h3>Moving</h3>
+                  <span>Paper Animation, 2016</span>
+                </div>
+              </div>
+              <!-- modal -->
+              <div class="modal closed" id="modal-moving">
+                <div class="modal__overlay"></div>
+                <div class="modal__content">
+                  <button class="modal__btn">
+                    <i class="far fa-window-close"></i>
+                  </button>
+                  <h1>Moving</h1>
+                  <img
+                    class="modal__mainImg"
+                    src="imgs/projects/MovingPaperAni_m.jpg"
+                    alt="project image"
+                  />
+                  <h2 class="content__explanation">
+                    <div class="content__info">
+                      <ul class="content__info1">
+                        <li>Year</li>
+                        <li>For</li>
+                        <li>Role</li>
+                        <li>Skills</li>
+                        <li>Link</li>
+                      </ul>
+                      <ul class="content__info2">
+                        <li>2016</li>
+                        <li>-</li>
+                        <li>Artist</li>
+                        <li>Maya</li>
+                        <li>
+                          <a href="https://youtu.be/opyDuGoWaaQ" target="_blank"
+                            >Youtube</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="content__txt">
+                      &lt;Moving&gt; is a paper animation. <br />
+                      This was created when I was taking Maya Animation class by
+                      Mi-Jin Kang at Green Computer Academy.<br />
+                    </div>
+                  </h2>
+                </div>
+              </div>
+              <!-- 2016, (Don’t fake it, believe it) Dear. Young Me -->
+              <div class="content" id="open-dearYoungMe" data-tag="fine-art">
+                <div
+                  class="content__thumbnail"
+                  id="content__thumbnail--DearYoungMe"
+                ></div>
+                <div class="content__description">
+                  <h3>Dear. Young Me</h3>
+                  <span>Mixed Media, 2016</span>
+                </div>
+              </div>
+              <!-- modal -->
+              <div class="modal closed" id="modal-dearYoungMe">
+                <div class="modal__overlay"></div>
+                <div class="modal__content">
+                  <button class="modal__btn">
+                    <i class="far fa-window-close"></i>
+                  </button>
+                  <h1>Dear. Young Me</h1>
+                  <img
+                    class="modal__mainImg"
+                    src="imgs/projects/DearYoungMe_m.jpg"
+                    alt="project image"
+                  />
+                  <h2 class="content__explanation">
+                    <div class="content__info">
+                      <ul class="content__info1">
+                        <li>Year</li>
+                        <li>For</li>
+                        <li>Role</li>
+                        <li>Skills</li>
+                        <li>Link</li>
+                      </ul>
+                      <ul class="content__info2">
+                        <li>2016</li>
+                        <li>-</li>
+                        <li>Artist</li>
+                        <li>mixed media</li>
+                        <li>not available</li>
+                      </ul>
+                    </div>
+                    <div class="content__txt">
+                      &lt;Dear. Young Me&gt; is an installation project.<br />
+                      In the walls and corners of gallery, there are bubble gums
+                      containing tiny notes. <br />
+                      Each note has a sentimental melancholy sentence to recall
+                      childhood excitement.<br />
+                      As time goes by, the bubble gums deflate.<br />
+                      This was on display at Mythtake Museum under the name of
+                      exhibiton &lt;Don’t fake it, believe it&gt;.
+                    </div>
+                  </h2>
+                </div>
+              </div>
+              <!-- 2015, Walking On The Spot -->
+              <div
+                class="content"
+                id="open-walkingOnTheSpot"
+                data-tag="fine-art"
+              >
+                <div
+                  class="content__thumbnail"
+                  id="content__thumbnail--WalkingOnTheSpot"
+                ></div>
+                <div class="content__description">
+                  <h3>Walking On The Spot</h3>
+                  <span>interactive media, 2015</span>
+                </div>
+              </div>
+              <!-- modal -->
+              <div class="modal closed" id="modal-walkingOnTheSpot">
+                <div class="modal__overlay"></div>
+                <div class="modal__content">
+                  <button class="modal__btn">
+                    <i class="far fa-window-close"></i>
+                  </button>
+                  <h1>Walking On The Spot</h1>
+                  <img
+                    class="modal__mainImg"
+                    src="imgs/projects/WalkingOnTheSpot_m.jpg"
+                    alt="project image"
+                  />
+                  <h2 class="content__explanation">
+                    <div class="content__info">
+                      <ul class="content__info1">
+                        <li>Year</li>
+                        <li>For</li>
+                        <li>Role</li>
+                        <li>Skills</li>
+                        <li>Link</li>
+                      </ul>
+                      <ul class="content__info2">
+                        <li>2015</li>
+                        <li>-</li>
+                        <li>Artist</li>
+                        <li>wireless camera</li>
+                        <li>not available</li>
+                      </ul>
+                    </div>
+                    <div class="content__txt">
+                      &lt;Walking On The Spot&gt; is an interactive media
+                      installation for graduation exhibition of media art
+                      major.<br />
+                      I wanted to express lethargic state of the current
+                      generation.<br />
+                      User wearing the device with built-in wireless camera
+                      walks around the gallery while stuck in screen.
+                    </div>
+                  </h2>
+                </div>
+              </div>
+              <!-- 2015, Package for Me -->
+              <div class="content" id="open-packageForMe" data-tag="fine-art">
+                <div
+                  class="content__thumbnail"
+                  id="content__thumbnail--PackageForMe"
+                ></div>
+                <div class="content__description">
+                  <h3>Package for Me</h3>
+                  <span>
+                    projection mapping on the boxes, 2015
+                  </span>
+                </div>
+              </div>
+              <!-- modal -->
+              <div class="modal closed" id="modal-packageForMe">
+                <div class="modal__overlay"></div>
+                <div class="modal__content">
+                  <button class="modal__btn">
+                    <i class="far fa-window-close"></i>
+                  </button>
+                  <h1>Package For Me</h1>
+                  <img
+                    class="modal__mainImg"
+                    src="imgs/projects/PackageForMe_m.jpg"
+                    alt="project image"
+                  />
+                  <h2 class="content__explanation">
+                    <div class="content__info">
+                      <ul class="content__info1">
+                        <li>Year</li>
+                        <li>For</li>
+                        <li>Role</li>
+                        <li>Skills</li>
+                        <li>Link</li>
+                      </ul>
+                      <ul class="content__info2">
+                        <li>2015</li>
+                        <li>-</li>
+                        <li>Artist</li>
+                        <li>Resolume, After Effect</li>
+                        <li>not available</li>
+                      </ul>
+                    </div>
+                    <div class="content__txt">
+                      &lt;Package For Me&gt; is projection mapping work.
+                      <br />It has a fictional story of person who chop one's
+                      body off and send it to future-self to overcome one's 
+                      torpor. <br />I wanted to do project mapping with
+                      imaginative creativity about time and notion of inside and
+                      outside.
+                    </div>
+                  </h2>
+                </div>
+              </div>
+              <!-- 2014, 1:1 Bar -->
+              <div class="content" id="open-1to1Bar" data-tag="fine-art">
+                <div
+                  class="content__thumbnail"
+                  id="content__thumbnail--1to1Bar"
+                ></div>
+                <div class="content__description">
+                  <h3>1 to 1 Bar</h3>
+                  <span>
+                    performance and single-channel video installation, 2014
+                  </span>
+                </div>
+              </div>
+              <!-- modal -->
+              <div class="modal closed" id="modal-1to1Bar">
+                <div class="modal__overlay"></div>
+                <div class="modal__content">
+                  <button class="modal__btn">
+                    <i class="far fa-window-close"></i>
+                  </button>
+                  <h1>1:1 Bar</h1>
+                  <img
+                    class="modal__mainImg"
+                    src="imgs/projects/1to1Bar_m.jpg"
+                    alt="project image"
+                  />
+                  <h2 class="content__explanation">
+                    <div class="content__info">
+                      <ul class="content__info1">
+                        <li>Year</li>
+                        <li>For</li>
+                        <li>Role</li>
+                        <li>Skills</li>
+                        <li>Link</li>
+                      </ul>
+                      <ul class="content__info2">
+                        <li>2014</li>
+                        <li>-</li>
+                        <li>Artist</li>
+                        <li>molding, premiere</li>
+                        <li>not available</li>
+                      </ul>
+                    </div>
+                    <div class="content__txt">
+                      &lt;1 : 1 Bar&gt; is performance and single-channel video
+                      installation work I did for fine art major graduation
+                      exhibition. ​ I wanted to speak about fluidity of identity
+                      and complement co-students who worked hard for graduation.
+                    </div>
+                  </h2>
+                </div>
+              </div>
+              <!-- 2014, Closet Inside The Closet -->
+              <div class="content" id="open-CIC" data-tag="fine-art">
+                <div
+                  class="content__thumbnail"
+                  id="content__thumbnail--ClosetInsideTheCloset"
+                ></div>
+                <div class="content__description">
+                  <h3>Closet Inside The Closet</h3>
+                  <span>
+                    3 channel video projection on the ceiling of three connected
+                    rooms, 2014
+                  </span>
+                </div>
+              </div>
+              <!-- modal -->
+              <div class="modal closed" id="modal-CIC">
+                <div class="modal__overlay"></div>
+                <div class="modal__content">
+                  <button class="modal__btn">
+                    <i class="far fa-window-close"></i>
+                  </button>
+                  <h1>Closet Inside The Closet</h1>
+                  <img
+                    class="modal__mainImg"
+                    src="imgs/projects/ClosetInsideTheCloset_m.jpg"
+                    alt="project image"
+                  />
+                  <h2 class="content__explanation">
+                    <div class="content__info">
+                      <ul class="content__info1">
+                        <li>Year</li>
+                        <li>For</li>
+                        <li>Role</li>
+                        <li>Skills</li>
+                        <li>Link</li>
+                      </ul>
+                      <ul class="content__info2">
+                        <li>2014</li>
+                        <li>-</li>
+                        <li>Artist</li>
+                        <li>carpentry, premiere</li>
+                        <li>not available</li>
+                      </ul>
+                    </div>
+                    <div class="content__txt">
+                      &lt;Closet Inside The Closet&gt; is 3 channel video
+                      projection on the structure that I built for fine art
+                      major graduation exhibition.<br />
+                      I wanted to express discrimination on different identities
+                      based on their costumes.
+                    </div>
+                  </h2>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <!-- Testimonials (hidden)-->
+        <div id="testimonials__wrap" class="section hidden">
+          <section id="testimonials" class="section__container">
+            <h1>Testimonials</h1>
+            <div class="testimonials">
+              <div class="testimonial">
+                <div class="testimonial__avatar" id="testimonial_A"></div>
+                <div class="testimonial__speech-bubble">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Fuga consectetur nihil eos voluptatem recusandae? Obcaecati,
+                    adipisci. Placeat impedit hic voluptatem quasi, ex sint,
+                    reprehenderit quibusdam, quis enim explicabo libero ea!
+                  </p>
+                  <p class="name"><a href="#">Name </a>/ Company</p>
+                </div>
+              </div>
+
+              <div class="testimonial">
+                <div class="testimonial__speech-bubble">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    <br />Fuga consectetur nihil eos voluptatem recusandae?
+                    <br />
+                    Obcaecati, adipisci. <br />
+                    Placeat impedit hic voluptatem quasi, ex sint,
+                    <br />reprehenderit quibusdam, quis enim explicabo libero
+                    ea!
+                  </p>
+                  <p class="name"><a href="#">Name </a>/ Company</p>
+                </div>
+                <div class="testimonial__avatar" id="testimonial_B"></div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+      <div id="right">
+        <!-- Navbar -->
+        <nav id="navbar">
+          <ul class="navbar__menu">
+            <li class="navbar__menu__item selected" data-link="#all">About</li>
+            <li class="navbar__menu__item" data-link="#projects__wrap">
+              Projects
+            </li>
+            <li
+              class="navbar__menu__item hidden"
+              data-link="#testimonials__wrap"
+            >
+              Testimonials
+            </li>
+          </ul>
+        </nav>
+        <!-- Toggle -->
+        <button class="navbar__toggle-btn">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+    <!-- Footer bottom -->
+    <footer id="bottom">
+      <div class="footer__links">
+        <a
+          href="https://www.linkedin.com/in/hye-young-jo-2743b189/"
+          target="_black"
+        >
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="https://dribbble.com/visualistJohy" target="_black">
+          <i class="fab fa-dribbble"></i>
+        </a>
+      </div>
+      <p class="contact__rights">2020 © Hye-Young Jo</p>
+    </footer>
+    <!-- Jump Scroll -->
+    <div id="jump">
+      <div class="jump__dot" onclick="topFunction()" title="Go to top">
+        <i class="fas fa-angle-up"></i>
+      </div>
+      <div class="jump__line"></div>
+      <div
+        class="jump__dot"
+        onclick="middleFunction()"
+        title="Go to middle"
+      ></div>
+      <div class="jump__line"></div>
+      <div class="jump__dot" onclick="bottomFunction()" title="Go to bottom">
+        <i class="fas fa-angle-down"></i>
+      </div>
+    </div>
+    <!-- Intro (HIDDEN)-->
+    <div id="intro">
+      <video
+        class="intro__video"
+        min-width="100%"
+        min-height="100%"
+        preload="auto"
+        autoplay
+        muted
+      >
+        <source src="videos/HY_Logo_animation.mp4" type="" video/mp4/> <source
+        src="videos/HY_Logo_animation.webm" type="" video/webm/> <source
+        src="videos/HY_Logo_animation.ogv" type="" video/ogv/>
+      </video>
+      <div class="intro__skip">
+        <h1>
+          SKIP
+        </h1>
+      </div>
+    </div>
+  </body>
+</html>
