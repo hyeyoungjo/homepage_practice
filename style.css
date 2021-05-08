@@ -648,7 +648,7 @@ h2 {
 }
 
 #redirect_bg {
-  background-color: var(--color-dark-grey);
+  background-color: black;
   position: fixed;
   z-index: -1;
   top: 0;
@@ -665,13 +665,13 @@ h2 {
   height: 50%;
   position: fixed;
   left: 0px;
-  top: 50%;
+  top: 60%;
   padding-top: 70px;
-  background-color: var(--color-dark-grey);
+  background-color: black;
 }
 
 #redirect_txt h2 {
-  color: var(--color-black);
+  color: var(--color-pure-white);
   font-size: var(--font-medium);
   padding-right: 50px;
   padding-left: 50px;
@@ -680,16 +680,17 @@ h2 {
 .redirect__btn {
   font-size: var(--font-medium);
   font-weight: var(--weight-bold);
-  color: var(--color-white);
-  background-color: var(--color-black);
+  color: black;
+  background-color: var(--color-pure-white);
   /* border-radius: 50px; */
   margin: 24px;
   padding: 8px 100px;
 }
 
 .redirect__btn:hover {
-  background-color: var(--color-dark-green);
-  box-shadow: 2px 2px 0px var(--color-white);
+  background-color: var(--color-pure-white);
+  box-shadow: 2px 2px 0px var(--color-red);
+  color: var(--color-red);
 }
 
 /* INTRO INTRO INTRO INTRO INTRO INTRO INTRO INTRO INTRO INTRO INTRO INTRO INTRO INTRO INTRO INTRO INTRO INTRO INTRO INTRO INTRO INTRO INTRO INTRO INTRO INTRO INTRO INTRO INTRO  */
